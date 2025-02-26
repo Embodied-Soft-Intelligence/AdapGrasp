@@ -1,1 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdaGrasp - Adaptive Grasping</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+            text-align: center;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* 图片容器之间的间距 */
+            flex-wrap: wrap; /* 如果图片过多，换行显示 */
+        }
+        .gallery-item {
+            text-align: center;
+            max-width: 300px; /* 每个图片容器的最大宽度 */
+        }
+        .gallery-item img {
+            height: 200px; /* 统一图片高度 */
+            width: auto; /* 宽度自适应 */
+            border-radius: 8px;
+            object-fit: cover; /* 保持图片比例 */
+        }
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #555;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .grid-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .code {
+            background-color: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: "Courier New", Courier, monospace;
+            overflow-x: auto;
+        }
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- 总体介绍 -->
+    <header>
+        <h1>AdaGrasp - Adaptive Grasping</h1>
+        <p>AdaGrasp is an innovative approach to robotic grasping using adaptive algorithms. Our goal is to enable robots to grasp objects of various shapes and sizes with high precision and adaptability.</p>
+    </header>
+
+    <!-- 实物抓取展示 -->
+    <section id="grasp-demo">
+        <h2>Real-world Grasping Demo</h2>
+        <div class="gallery">
+            <!-- 图片1 -->
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Uopia/AdaGrasp/main/0.jpg" alt="Grasp Demo 1">
+                <p>Demo 1: Grasping a rectangular object.</p>
+            </div>
+            <!-- 图片2 -->
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Uopia/AdaGrasp/main/1.jpg" alt="Grasp Demo 2">
+                <p>Demo 2: Grasping a cylindrical object.</p>
+            </div>
+            <!-- 图片3 -->
+            <div class="gallery-item">
+                <img src="https://raw.githubusercontent.com/Uopia/AdaGrasp/main/2.jpg" alt="Grasp Demo 3">
+                <p>Demo 3: Grasping an irregularly shaped object.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 数据集与代码 -->
+    <section>
+        <div class="grid-container">
+            <!-- 数据集 -->
+            <div class="grid-item">
+                <h2>Dataset</h2>
+                <p>Our dataset contains a variety of objects and their corresponding grasping poses. You can download the dataset from the link below:</p>
+                <a href="https://example.com/dataset" target="_blank">Download Dataset</a>
+            </div>
+
+            <!-- 算法代码 -->
+            <div class="grid-item">
+                <h2>Algorithm Code</h2>
+                <p>Below is a snippet of the core algorithm used in AdaGrasp:</p>
+                <div class="code">
+                    <pre>
+# AdaGrasp Algorithm Snippet
+def adaptive_grasp(object_shape, sensor_data):
+    # Calculate optimal grasp based on object shape and sensor input
+    grasp_pose = calculate_grasp_pose(object_shape, sensor_data)
+    return grasp_pose
+
+def calculate_grasp_pose(shape, data):
+    # Placeholder for grasp pose calculation logic
+    pass
+                    </pre>
+                </div>
+                <p>For the full implementation, visit our <a href="https://github.com/Uopia/AdaGrasp" target="_blank">GitHub repository</a>.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer style="text-align: center; padding: 20px; background-color: #007BFF; color: white;">
+        <p>&copy; 2023 AdaGrasp Team. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
