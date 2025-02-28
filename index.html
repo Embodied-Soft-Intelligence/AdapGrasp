@@ -39,26 +39,36 @@
 
         /* Image Gallery Section */
         .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 25px;  /* Increased gap */
-            flex-wrap: wrap;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 30px;
+          max-width: 1220px; 
+          margin: 0 auto;
         }
+        
+        @media (max-width: 768px) {
+          .gallery {
+            grid-template-columns: 1fr;
+            gap: 20px;
+          }
+        }
+        
         .gallery-item {
-            max-width: 573px;
-            margin: 15px;  /* Increased margin */
+          width: 100%;
+          overflow: hidden;
+          transition: transform 0.3s ease;
         }
+        
+        .gallery-item:hover {
+          transform: translateY(-5px);
+        }
+        
         .gallery-item img {
-            width: 100%;
-            height: 316px;
-            object-fit: contain;
-            border-radius: 8px;
-        }
-        .gallery-item p {
-            font-size: 1.2em;  /* Increased text size */
-            margin: 15px 0;
-            color: #555;
-            text-align: center;
+          width: 100%;
+          height: 340px; 
+          object-fit: cover;
+          border-radius: 12px;
+          box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
 
         /* Dataset & Algorithm Section */
