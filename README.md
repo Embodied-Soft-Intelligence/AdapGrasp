@@ -3,7 +3,7 @@
 PyTorch implementation of paper "AdapGrasp: A Stiffness and Grasp Affordance Dataset with a Transformer-based Adaptive Grasp Model"
 
 ## Visualization of the architecture
-<img src="https://raw.githubusercontent.com/Embodied-Soft-Intelligence/AdapGrasp/main/demo/1.jpg" width="1000" align="middle"/>
+<img src="https://raw.githubusercontent.com/Embodied-Soft-Intelligence/AdapGrasp/main/demo/1.png" width="1000" align="middle"/>
 <br>
 
 This code was developed with Python 3.8 on Ubuntu 18.04.  
