@@ -1,4 +1,4 @@
-## AdaGrasp: A Stiffness and Grasp Affordance Dataset and a Transformer-Based Adaptive Grasp Method
+## AdapGrasp: A Stiffness and Grasp Affordance Dataset with a Transformer-based Adaptive Grasp Model
 
 PyTorch implementation of paper "AdapGrasp: A Stiffness and Grasp Affordance Dataset with a Transformer-based Adaptive Grasp Model"
 
